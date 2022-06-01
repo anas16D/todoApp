@@ -218,10 +218,12 @@ function removeTodosOfLocalStorage(todoText)
 
     // })
 
-    let index = todos.indexOf(todoText); 
+    // let index = todos.indexOf(todoText); 
     
-    todos.splice(index, 1);
-    console.log(todos);
+    // todos.splice(index, 1);
+    // console.log(todos);
+
+    delete todos[todoText];
 
     localStorage.setItem("todos", JSON.stringify(todos));
 }
